@@ -1,0 +1,27 @@
+# ---------- KİŞİSEL VERİLER (KVKK) — asla depoya girmez ----------
+# Öğrenci yüz fotoğrafları, giriş fotoğrafları, ad/numara/yoklama kayıtları ve yüz kodları
+kisiler/*
+!kisiler/.gitkeep
+kisiler_eski/
+static/fotolar/*
+!static/fotolar/.gitkeep
+kayitlar.db
+kayitlar.db-*
+yuzler.pkl
+yuzler.pkl.tmp
+
+# ---------- Gizli dosyalar ----------
+sifre.txt
+gizli_anahtar.txt
+
+# ---------- Kurulumla gelen / büyük / geçici ----------
+venv/
+# Türkçe ses modeli (~66 MB); README'deki komutla indirilir
+sesler/
+loglar/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
