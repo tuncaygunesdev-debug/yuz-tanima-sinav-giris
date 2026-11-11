@@ -17,7 +17,7 @@ GORUNTU_AYNA = True   # ekranlarda görüntüyü ayna gibi göster (sağ elini k
 # Kendi sınıfınla ölçmek için: venv/bin/python hassasiyet.py
 TOLERANS = 0.47  # en yakın kişi bundan yakınsa "tanındı" (düşük = daha katı)
 MARJ = 0.05      # en yakın kişi, ikinci en yakın kişiden en az bu kadar daha yakın olmalı;
-                 # değilse sistem "emin değilim" der (sarı ?) ve karar vermez
+                 # değilse sistem "emin değilim" der (ekranda ?) ve karar vermez
 ONAY_KARE = 3    # bir yüz art arda bu kadar analizde aynı kişi çıkarsa kayıt düşülür
 AYRILMA = 3      # kişi kameradan bu kadar saniye kaybolursa, geri geldiğinde yeni bir olay sayılır
                  # (kameranın önünde durduğu sürece aynı mesaj tekrar tekrar çıkmaz)

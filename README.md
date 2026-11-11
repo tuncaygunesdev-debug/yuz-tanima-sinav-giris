@@ -4,6 +4,7 @@ Pamukkale Üniversitesi Denizli Teknik Bilimler MYO için hazırlanmış, yüz t
 giriş sistemi: öğrenci kaydı (KVKK onaylı, yönlendirmeli poz çekimi), kapıda giriş kiosku
 (canlılık kontrolü, rastgele sıra numarası, sesli karşılama), görevli paneli (sınavlar,
 canlı yoklama, Excel). Teknolojilerin ayrıntılı anlatımı: `Teknoloji_Kitapcigi.pdf`.
+Geliştirmeye katkı: **`GELISTIRME.md`** (mimari, tasarım kararları, yapılabilecekler).
 
 > **Kişisel veri yoktur.** Öğrenci fotoğrafları, giriş fotoğrafları, veritabanı, yüz kodları,
 > şifre ve gizli anahtar depoya girmez (`.gitignore`); her kurulum kendi verisini oluşturur.
