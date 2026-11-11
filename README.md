@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 
 - Kamera adresi `ayarlar.py` içindeki `KAMERA` satırıdır (telefon IP Webcam, webcam veya ESP32-CAM).
-- Sesli karşılama için Türkçe ses modelini indir (aşağıda "Sesli karşılama").
+- Sesli karşılama için: `./ses_indir.sh` (Türkçe ses modeli, ~66 MB; isteğe bağlı).
 - Testler: `venv/bin/python -m pytest` (yüz testleri `kisiler_eski/` klasöründe örnek
   fotoğraf yoksa atlanır).
 
@@ -114,11 +114,12 @@ Ses bilgisayardan çıkar; Bluetooth hoparlörü bilgisayara bağlayıp varsayı
 yapman yeterli. Konuşma Piper ile internetsiz üretilir:
 
 ```bash
-venv/bin/pip install piper-tts
-mkdir -p sesler && cd sesler
-curl -LO https://huggingface.co/rhasspy/piper-voices/resolve/main/tr/tr_TR/dfki/medium/tr_TR-dfki-medium.onnx
-curl -LO https://huggingface.co/rhasspy/piper-voices/resolve/main/tr/tr_TR/dfki/medium/tr_TR-dfki-medium.onnx.json
+./ses_indir.sh
 ```
+
+Betik Türkçe ses modelini (Piper `tr_TR-dfki-medium`, ~66 MB) [piper-voices](https://huggingface.co/rhasspy/piper-voices)
+deposundan `sesler/` klasörüne indirir ve gerekirse `piper-tts`'i kurar. Model boyutu ve
+başkasına ait olduğu için depoda tutulmaz.
 
 Bunlar yoksa kiosk tarayıcının kendi Türkçe sesini dener; o da yoksa sessiz çalışır.
 
